@@ -1,10 +1,21 @@
 .wp-block-create-block-formo-recipes-slider {
-  background-color: var(--wp--preset--color--formo-blue);
   padding: 0;
   margin: 0;
+  overflow: hidden;
   
   & h3.formo-recipe-slider-previewText-header {
-    font-size: var(--wp--preset--font-size--x-large);
+    font-size: var(--wp--preset--font-size--large);
+  }
+  & p.formo-recipe-slider-previewText-p {
+    font-size: var(--wp--preset--font-size--small);
+  }
+  @media screen and (max-width: 782px) {
+    & h3.formo-recipe-slider-previewText-header {
+      font-size: var(--wp--preset--font-size--body);
+    }
+    & p.formo-recipe-slider-previewText-p {
+      font-size: var(--wp--preset--font-size--tiny);
+    }
   }
 }
 .formo-recipe-slider-previewText {
@@ -18,7 +29,7 @@
   align-items: center;
   background-color: rgba(0,0,0,0.4);
   color: var(--wp--preset--color--formo-cream);
-
+  border-radius: 1em;
 }
 .formo-recipe-slider-previewText-inner {
   max-width: 30em;
@@ -29,4 +40,7 @@
   width: 100%;
   height: auto;
   display: block;
+  display: block;
+  border-radius: 1em;
+  overflow: hidden;
 }

@@ -26,13 +26,14 @@ export default function Edit({attributes, setAttributes}) {
               'formo-recipes-slider'
             ) }
           </h3>
-          <p>
+          <p className='formo-recipe-slider-previewText-p'>
             { __(
-              'It pulls in recipes from the formo recipe post type and displays four of them randomly in a slider. You can\'t edit this block in the editor. You can only change the time it takes for the slider to change slides in the block settings on the right.',
+              'It pulls in recipes from the formo recipe post type and displays four of them randomly in a slider. You can only change the time it takes for the slider to change slides in the block settings on the right.',
               'formo-recipes-slider'
             ) }
-            At the moment it is set to { attributes.delay ? attributes.delay : '5ish' } seconds.
-            Another things is: { attributes.stuff }
+          </p>
+          <p className='formo-recipe-slider-previewText-p'>
+            At the moment the delay is set to { attributes.delay } seconds.
           </p>
         </div>
       </div>
