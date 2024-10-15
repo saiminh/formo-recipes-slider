@@ -24,8 +24,7 @@ function render_four_random_recipes( $block_attributes, $content) {
   }
   
   $args = array(  
-    'post_type' => 'post',
-    'category_name' => 'recipes',
+    'post_type' => 'formo2022_recipe',
     'post_status' => 'publish',
     'posts_per_page' => 4, 
     'orderby' => 'rand'
